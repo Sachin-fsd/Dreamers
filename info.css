@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+   
+  }
+  
+  #trail{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: none;
+  }
+  
+  #canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height:100%;
+    pointer-events:none;
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+    margin: 5px;
+    /* padding: 5px; */
+    background-color: rgb(15, 16, 20);
+    overflow-y: scroll;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
+#poster{
+    position: absolute;
+    top: 10%;
+    left: 5%;
+}
+
+#poster img{
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.267) 0px 7px 29px 0px;
+}
+
+#title{
+    position: absolute;
+    left: 30%;
+    top: 10%;
+    width: 60%;
+    text-align: center;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* border: 1px solid red; */
+}
+
+#content{
+    display: flex;
+    width: 60%;
+    height: 70%;
+    flex-wrap: wrap;
+    gap: 5%;
+    position: absolute;
+    left: 35%;
+    top: 20%;
+    color: white;
+}
+
+#download{
+    /* border: 1px solid red; */
+    position: absolute;
+    text-align: center;
+    top: 80%;
+    left: 10%;
+    color: white;
+}

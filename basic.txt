@@ -1,0 +1,47 @@
+
+width: 1340px;
+height: 615px; 
+
+function fun(e) {
+  if (e.name == "Bahubali The Beginning") {
+    movie_link =
+      "https://dl3.3rver.org/cdn2/02/film/2015/Bahubali.The.Beginning/Baahubali.The.Beginning.2015.720p.Ganool.mkv";
+    movie_download = "Bahubali The Beginning";
+  } else if (e.name == "Frozen 2") {
+    movie_link =
+      "https://dl3.3rver.org/cdn2/02/film/2019/Frozen.2/Frozen.2.2019.720p.BluRay.x264.Pahe.mkv";
+    movie_download = "Frozen 2";
+  } else if (e.name == "Spider-man Far from home") {
+    (movie_link =
+      "https://dl3.3rver.org/cdn2/02/film/2019/Spider%20Man%20Far%20From%20Home/Spider.Man.Far.From.Home.2019.BluRay.720p.x264.MkvCage.mkv"),
+      (movie_download = "Spider-man Far from home");
+  } else if (e.name == "Avengers Age Of Ultron") {
+    movie_link =
+      "https://dl3.3rver.org/cdn2/02/film/2015/Avengers%3A%20Age%20Of%20Ultron/Avengers.Age.of.Ultron.2015.1080p.BluRay.MkvCage.mkv";
+    movie_download = "Avengers Age Of Ultron";
+  } else if (e.name == "The Rental") {
+    movie_link =
+      "https://dl3.3rver.org/cdn2/02/film/2020/The.Rental/The.Rental.2020.480p.WEB.HD.x264.300MB.Pahe.mkv";
+    movie_download = "The Rental";
+  } else if (e.name == "Ant man") {
+    movie_link =
+      "https://dl3.3rver.org/cdn2/02/film/2015/Ant%20Man/Ant-Man.2015.720p.BluRay.MkvCage.mkv";
+    movie_download = "Ant man";
+  } else if (e.name == "The Good Dinosour") {
+    movie_link =
+      "https://dl3.3rver.org/cdn2/02/film/2015/The.Good.Dinosaur/The.Good.Dinosaur.2015.720p.BluRay.mkv";
+    movie_download = "The Good Dinosour";
+  } else if (e.name == "Cindrella") {
+    movie_link =
+      "https://dl3.3rver.org/cdn2/02/film/2015/Cinderella/Cinderella.2015.720p.BluRay.mkv";
+    movie_download = "Cindrella";
+  }
+
+  let link = document.createElement("a");
+  link.href = movie_link;
+  link.download = movie_download;
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+  alert(`Wait ${e.name} Download is in progress..`)
+}
