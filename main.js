@@ -29,7 +29,7 @@ function loadimg() {
   }
 }
 
-loadimg()
+loadimg();
 
 window.onload = () => {
   let top = document.getElementById("top");
@@ -42,9 +42,9 @@ window.onload = () => {
   }
 
   let latest = document.querySelectorAll("#big2 img");
-  for(let x of latest){
+  for (let x of latest) {
     x.style.width = `${top.clientWidth / 6.5}px`;
-    x.style.height = `${(top.clientWidth / 6.5)*1.5}px`;
+    x.style.height = `${(top.clientWidth / 6.5) * 1.5}px`;
   }
 };
 
@@ -108,15 +108,6 @@ function myfun2() {
   left = left - 100;
 }
 
-document.querySelector("img").addEventListener('click', (e)=>{
-  console.log(this)
-})
-
-function fun(e){
-  // window.location.href = "info.html"
-  //  localStorage.setItem("click",e)
-}
-
 async function get_movie(movie_name) {
   let a = await fetch(
     `http://www.omdbapi.com/?apikey=85fb5fc6&s=${movie_name}`
@@ -133,13 +124,13 @@ function search() {
 }
 
 function create(movi) {
-  console.log(movi);
+  // console.log(movi);
   let div = document.createElement("div");
   let img = document.createElement("img");
   img.src = movi.Poster;
   let title = document.createElement("h2");
   title.innerText = movi.Title;
-  div.addEventListener('click',()=>information(movi.Title))
+  div.addEventListener("click", () => information(movi.Title));
   div.append(img, title);
   document.querySelector("#result").append(div);
   document
@@ -179,7 +170,7 @@ function dot(e) {
 
 window.onresize = () => {
   left = 100;
-  clearInterval(x)
+  clearInterval(x);
   clearInterval(y);
   loadimg();
   let top = document.getElementById("top");
@@ -192,24 +183,22 @@ window.onresize = () => {
   }
 
   let latest = document.querySelectorAll("#big2 img");
-  for(let x of latest){
+  for (let x of latest) {
     x.style.width = `${top.clientWidth / 6.5}px`;
-    x.style.height = `${(top.clientWidth / 6.5)*1.5}px`;
+    x.style.height = `${(top.clientWidth / 6.5) * 1.5}px`;
   }
 };
 
-
 let allImages = document.querySelectorAll("img");
 
-allImages.forEach((img)=>{
-  img.addEventListener("click",()=>information(img.name))
-})
+allImages.forEach((img) => {
+  img.addEventListener("click", () => information(img.name));
+});
 
-
-function information(title){
+function information(title) {
   // document.querySelector("#title h1").innerText = title
-  localStorage.setItem("clicked",title)
-  window.location.href = "info.html"
+  localStorage.setItem("clicked", title);
+  window.location.href = "info.html";
 
-  // console.log(title)
+  // console.log("k",title)
 }
