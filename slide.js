@@ -70,8 +70,8 @@ function slider() {
 }
 
 var d = 0;
+var just = 0;
 function dot(e) {
-  console.log(d);
   clearInterval(slide);
   clearTimeout(x);
   clearTimeout(y);
@@ -81,6 +81,10 @@ function dot(e) {
   clearTimeout(z2);
   
 if(d=="0"){
+  if(e.id==just){
+    return;
+  }
+  just = e.id;
   box1.classList.add("back")
   for (a in box){
     box[a].classList.remove("back2")
@@ -110,6 +114,10 @@ if(d=="0"){
   }
   d=1;
 }else{
+  if(e.id==just){
+    return;
+  }
+  just = e.id;
   box1.classList.add("trans2")
   for (x in box){
     box[x].classList.remove("trans2");

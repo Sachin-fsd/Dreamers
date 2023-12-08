@@ -12,7 +12,9 @@ async function download(movie, quality) {
     `https://65654cdaeb8bb4b70ef164fb.mockapi.io/movies?name=${movie}`
   );
   let b = await a.json();
-  movie_download = b[0]["name"];
+  if(b.length!==0){
+    console.log(b);
+    movie_download = b[0]["name"];
 
   if (quality == "1080") {
     movie_link = b[0]["1080p"];
@@ -27,6 +29,10 @@ async function download(movie, quality) {
   link.click();
   document.body.removeChild(link);
   alert(`Wait ${movie_download} Download is in progress..`);
+  }
+  else{
+    alert(`We are currently facing some issues.`)
+  }
 }
 
 async function get_movie(movie) {
@@ -47,7 +53,7 @@ function update(r) {
   document.querySelector("#director h3").innerText = `Director : ${r.Director}`;
   document.querySelector("#writer h3").innerText = `Writer : ${r.Writer}`;
   document.querySelector("#actors h3").innerText = `Actors : ${r.Actors}`;
-  document.querySelector("#plot h3").innerText = `Genre : ${r.Plot}`;
+  document.querySelector("#plot h3").innerText = `Plot : ${r.Plot}`;
   document.querySelector("#language h3").innerText = `Language : ${r.Language}`;
   document.querySelector("#country h3").innerText = `Country : ${r.Country}`;
   document.querySelector("#awards h3").innerText = `Awards : ${r.Awards}`;
