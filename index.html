@@ -8,27 +8,33 @@
   </head>
   <body>
     <canvas id="canvas"></canvas>
-
-    <div id="top">
-      <div id="box1" class="transition">
-        <div id="frozen_2">
-          <img
-            src="https://wallpaperaccess.com/full/1982681.jpg"
-            alt="Frozen 2"
-            name="Frozen 2"
-          />
-        </div>
+    <div id="nav">
+      <div id="search">
+        <img src="images\icons8-search-30.png" alt="">
       </div>
+    </div>
 
-      <div id="box2" class="transition">
-        <div>
-          <img
-            src="https://wallpapercave.com/wp/wp1851925.jpg"
-            alt="Baahubali The Beginning"
-            name="Baahubali The Beginning"
-          />
+    <div id="content">
+      <div id="top">
+        <div id="box1" class="transition">
+          <div id="frozen_2">
+            <img
+              src="https://wallpaperaccess.com/full/1982681.jpg"
+              alt="Frozen 2"
+              name="Frozen 2"
+            />
+          </div>
         </div>
-      </div>
+
+        <div id="box2" class="transition">
+          <div>
+            <img
+              src="https://wallpapercave.com/wp/wp1851925.jpg"
+              alt="Baahubali The Beginning"
+              name="Baahubali The Beginning"
+            />
+          </div>
+        </div>
 
         <div id="box3" class="transition">
           <div>
@@ -40,250 +46,239 @@
           </div>
         </div>
 
-          <div id="box4" class="transition">
-            <div id="Avengers Age Of Ultron">
-              <img
-                src="https://images8.alphacoders.com/570/570875.png"
-                alt="Avengers Age Of Ultron"
-                name="Avengers Age Of Ultron"
-              />
-            </div>
+        <div id="box4" class="transition">
+          <div id="Avengers Age Of Ultron">
+            <img
+              src="https://images8.alphacoders.com/570/570875.png"
+              alt="Avengers Age Of Ultron"
+              name="Avengers Age Of Ultron"
+            />
           </div>
-        
-      
+        </div>
+      </div>
+
+      <div style="text-align: center" id="radio">
+        <span class="dot" id="r1" onclick="dot(this)"></span>
+        <span class="dot" id="r2" onclick="dot(this)"></span>
+        <span class="dot" id="r3" onclick="dot(this)"></span>
+        <span class="dot" id="r4" onclick="dot(this)"></span>
+      </div>
+
+      <!-- Latest divs -->
+      <div id="latest">
+        <div id="topic">
+          <p>Latest Releases</p>
+        </div>
+        <div id="cont">
+          <div id="big2">
+            <img
+              src="http://www.impawards.com/2020/posters/rental.jpg"
+              alt="The Rental"
+              name="The Rental"
+              title="The Rental"
+            />
+            <img
+              src="https://m.media-amazon.com/images/M/MV5BMjE1MTM4NDAzOF5BMl5BanBnXkFtZTgwNTMwNjI0MzE@._V1_SX300.jpg"
+              alt="Fifty Shades of Grey"
+              name="Fifty Shades of Grey"
+              title="Fifty Shades of Grey"
+            />
+            <img
+              src="https://m.media-amazon.com/images/I/71WozAG2FqL._AC_SY550_.jpg"
+              alt="The Good Dinosaur"
+              name="The Good Dinosaur"
+              title="The Good Dinosaur"
+            />
+            <img
+              src="http://www.impawards.com/2015/posters/cinderella.jpg"
+              alt="Cinderella"
+              name="Cinderella"
+              title="Cinderella"
+            />
+            <img
+              src="http://www.impawards.com/2020/posters/rental.jpg"
+              alt="The Rental"
+              name="The Rental"
+              title="The Rental"
+            />
+            <img
+              src="https://m.media-amazon.com/images/M/MV5BMjM2NTQ5Mzc2M15BMl5BanBnXkFtZTgwNTcxMDI2NTE@._V1_.jpg"
+              alt="Ant man"
+              name="Ant man"
+              title="Ant man"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div id="latest">
+        <div id="topic">
+          <p>Latest Releases</p>
+        </div>
+        <div id="cont">
+          <div id="big2">
+            <img
+              src="http://www.impawards.com/2020/posters/rental.jpg"
+              alt="The Rental"
+              name="The Rental"
+              title="The Rental"
+            />
+            <img
+              src="https://m.media-amazon.com/images/M/MV5BMjE1MTM4NDAzOF5BMl5BanBnXkFtZTgwNTMwNjI0MzE@._V1_SX300.jpg"
+              alt="Fifty Shades of Grey"
+              name="Fifty Shades of Grey"
+              title="Fifty Shades of Grey"
+            />
+            <img
+              src="https://m.media-amazon.com/images/I/71WozAG2FqL._AC_SY550_.jpg"
+              alt="The Good Dinosour"
+              name="The Good Dinosour"
+              title="The Good Dinosour"
+            />
+            <img
+              src="http://www.impawards.com/2015/posters/cinderella.jpg"
+              alt="Cindrella"
+              name="Cindrella"
+              title="Cindrella"
+            />
+            <img
+              src="http://www.impawards.com/2020/posters/rental.jpg"
+              alt="The Rental"
+              name="The Rental"
+              title="The Rental"
+            />
+            <img
+              src="https://m.media-amazon.com/images/M/MV5BMjM2NTQ5Mzc2M15BMl5BanBnXkFtZTgwNTcxMDI2NTE@._V1_.jpg"
+              alt="Ant man"
+              name="Ant man"
+              title="Ant man"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div id="latest">
+        <div id="topic">
+          <p>Latest Releases</p>
+        </div>
+        <div id="cont">
+          <div id="big2">
+            <img
+              src="http://www.impawards.com/2020/posters/rental.jpg"
+              alt="The Rental"
+              name="The Rental"
+              title="The Rental"
+            />
+            <img
+              src="https://m.media-amazon.com/images/M/MV5BMjE1MTM4NDAzOF5BMl5BanBnXkFtZTgwNTMwNjI0MzE@._V1_SX300.jpg"
+              alt="Fifty Shades of Grey"
+              name="Fifty Shades of Grey"
+              title="Fifty Shades of Grey"
+            />
+            <img
+              src="https://m.media-amazon.com/images/I/71WozAG2FqL._AC_SY550_.jpg"
+              alt="The Good Dinosour"
+              name="The Good Dinosour"
+              title="The Good Dinosour"
+            />
+            <img
+              src="http://www.impawards.com/2015/posters/cinderella.jpg"
+              alt="Cindrella"
+              name="Cindrella"
+              title="Cindrella"
+            />
+            <img
+              src="http://www.impawards.com/2020/posters/rental.jpg"
+              alt="The Rental"
+              name="The Rental"
+              title="The Rental"
+            />
+            <img
+              src="https://m.media-amazon.com/images/M/MV5BMjM2NTQ5Mzc2M15BMl5BanBnXkFtZTgwNTcxMDI2NTE@._V1_.jpg"
+              alt="Ant man"
+              name="Ant man"
+              title="Ant man"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div id="latest">
+        <div id="topic">
+          <p>Latest Releases</p>
+        </div>
+        <div id="cont">
+          <div id="big2">
+            <img
+              src="http://www.impawards.com/2020/posters/rental.jpg"
+              alt="The Rental"
+              name="The Rental"
+              title="The Rental"
+            />
+            <img
+              src="https://m.media-amazon.com/images/M/MV5BMjE1MTM4NDAzOF5BMl5BanBnXkFtZTgwNTMwNjI0MzE@._V1_SX300.jpg"
+              alt="Fifty Shades of Grey"
+              name="Fifty Shades of Grey"
+              title="Fifty Shades of Grey"
+            />
+            <img
+              src="https://m.media-amazon.com/images/I/71WozAG2FqL._AC_SY550_.jpg"
+              alt="The Good Dinosour"
+              name="The Good Dinosour"
+              title="The Good Dinosour"
+            />
+            <img
+              src="http://www.impawards.com/2015/posters/cinderella.jpg"
+              alt="Cindrella"
+              name="Cindrella"
+              title="Cindrella"
+            />
+            <img
+              src="http://www.impawards.com/2020/posters/rental.jpg"
+              alt="The Rental"
+              name="The Rental"
+              title="The Rental"
+            />
+            <img
+              src="https://m.media-amazon.com/images/M/MV5BMjM2NTQ5Mzc2M15BMl5BanBnXkFtZTgwNTcxMDI2NTE@._V1_.jpg"
+              alt="Ant man"
+              name="Ant man"
+              title="Ant man"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <div id="footer">
+        <div id="footup">
+          <div>
+            <p id="foothead">Company</p>
+            <p class="footbody">About Us</p>
+            <p class="footbody">Carreers</p>
+          </div>
+          <div>
+            <p id="foothead">View Website in</p>
+            <p class="footbody">English</p>
+            <p class="footbody">Hindi</p>
+          </div>
+          <div>
+            <p id="foothead">Need Help</p>
+            <p class="footbody">Visit Help Center</p>
+            <p class="footbody">Share feedback</p>
+          </div>
+          <div>
+            <p id="foothead">Connect with us</p>
+            <p class="footbody">Instagram</p>
+            <p class="footbody">Linked in</p>
+          </div>
+        </div>
+        <div id="footdown">
+          <p>All Rights Reserved</p>
+        </div>
+      </div>
     </div>
 
-    <div style="text-align: center" id="radio">
-      <span class="dot" id="r1" onclick="dot(this)"></span>
-      <span class="dot" id="r2" onclick="dot(this)"></span>
-      <span class="dot" id="r3" onclick="dot(this)"></span>
-      <span class="dot" id="r4" onclick="dot(this)"></span>
-    </div>
-
-    <div id="searchdiv">
-      <input
-        type="search"
-        name="search"
-        id="search"
-        placeholder="Search Anything here..."
-        onkeydown="search()"
-      />
-    </div>
-    <div id="result"></div>
-
-    <!-- Latest divs -->
-    <div id="latest">
-      <div id="topic">
-        <p>Latest Releases</p>
-      </div>
-      <div id="cont">
-        <div id="big2">
-          <img
-            src="http://www.impawards.com/2020/posters/rental.jpg"
-            alt="The Rental"
-            name="The Rental"
-            title="The Rental"
-          />
-          <img
-            src="https://m.media-amazon.com/images/M/MV5BMjE1MTM4NDAzOF5BMl5BanBnXkFtZTgwNTMwNjI0MzE@._V1_SX300.jpg"
-            alt="Fifty Shades of Grey"
-            name="Fifty Shades of Grey"
-            title="Fifty Shades of Grey"
-          />
-          <img
-            src="https://m.media-amazon.com/images/I/71WozAG2FqL._AC_SY550_.jpg"
-            alt="The Good Dinosaur"
-            name="The Good Dinosaur"
-            title="The Good Dinosaur"
-          />
-          <img
-            src="http://www.impawards.com/2015/posters/cinderella.jpg"
-            alt="Cinderella"
-            name="Cinderella"
-            title="Cinderella"
-          />
-          <img
-            src="http://www.impawards.com/2020/posters/rental.jpg"
-            alt="The Rental"
-            name="The Rental"
-            title="The Rental"
-          />
-          <img
-            src="https://m.media-amazon.com/images/M/MV5BMjM2NTQ5Mzc2M15BMl5BanBnXkFtZTgwNTcxMDI2NTE@._V1_.jpg"
-            alt="Ant man"
-            name="Ant man"
-            title="Ant man"
-          />
-        </div>
-      </div>
-    </div>
-
-    <div id="latest">
-      <div id="topic">
-        <p>Latest Releases</p>
-      </div>
-      <div id="cont">
-        <div id="big2">
-          <img
-            src="http://www.impawards.com/2020/posters/rental.jpg"
-            alt="The Rental"
-            name="The Rental"
-            title="The Rental"
-          />
-          <img
-            src="https://m.media-amazon.com/images/M/MV5BMjE1MTM4NDAzOF5BMl5BanBnXkFtZTgwNTMwNjI0MzE@._V1_SX300.jpg"
-            alt="Fifty Shades of Grey"
-            name="Fifty Shades of Grey"
-            title="Fifty Shades of Grey"
-          />
-          <img
-            src="https://m.media-amazon.com/images/I/71WozAG2FqL._AC_SY550_.jpg"
-            alt="The Good Dinosour"
-            name="The Good Dinosour"
-            title="The Good Dinosour"
-          />
-          <img
-            src="http://www.impawards.com/2015/posters/cinderella.jpg"
-            alt="Cindrella"
-            name="Cindrella"
-            title="Cindrella"
-          />
-          <img
-            src="http://www.impawards.com/2020/posters/rental.jpg"
-            alt="The Rental"
-            name="The Rental"
-            title="The Rental"
-          />
-          <img
-            src="https://m.media-amazon.com/images/M/MV5BMjM2NTQ5Mzc2M15BMl5BanBnXkFtZTgwNTcxMDI2NTE@._V1_.jpg"
-            alt="Ant man"
-            name="Ant man"
-            title="Ant man"
-          />
-        </div>
-      </div>
-    </div>
-
-    <div id="latest">
-      <div id="topic">
-        <p>Latest Releases</p>
-      </div>
-      <div id="cont">
-        <div id="big2">
-          <img
-            src="http://www.impawards.com/2020/posters/rental.jpg"
-            alt="The Rental"
-            name="The Rental"
-            title="The Rental"
-          />
-          <img
-            src="https://m.media-amazon.com/images/M/MV5BMjE1MTM4NDAzOF5BMl5BanBnXkFtZTgwNTMwNjI0MzE@._V1_SX300.jpg"
-            alt="Fifty Shades of Grey"
-            name="Fifty Shades of Grey"
-            title="Fifty Shades of Grey"
-          />
-          <img
-            src="https://m.media-amazon.com/images/I/71WozAG2FqL._AC_SY550_.jpg"
-            alt="The Good Dinosour"
-            name="The Good Dinosour"
-            title="The Good Dinosour"
-          />
-          <img
-            src="http://www.impawards.com/2015/posters/cinderella.jpg"
-            alt="Cindrella"
-            name="Cindrella"
-            title="Cindrella"
-          />
-          <img
-            src="http://www.impawards.com/2020/posters/rental.jpg"
-            alt="The Rental"
-            name="The Rental"
-            title="The Rental"
-          />
-          <img
-            src="https://m.media-amazon.com/images/M/MV5BMjM2NTQ5Mzc2M15BMl5BanBnXkFtZTgwNTcxMDI2NTE@._V1_.jpg"
-            alt="Ant man"
-            name="Ant man"
-            title="Ant man"
-          />
-        </div>
-      </div>
-    </div>
-
-    <div id="latest">
-      <div id="topic">
-        <p>Latest Releases</p>
-      </div>
-      <div id="cont">
-        <div id="big2">
-          <img
-            src="http://www.impawards.com/2020/posters/rental.jpg"
-            alt="The Rental"
-            name="The Rental"
-            title="The Rental"
-          />
-          <img
-            src="https://m.media-amazon.com/images/M/MV5BMjE1MTM4NDAzOF5BMl5BanBnXkFtZTgwNTMwNjI0MzE@._V1_SX300.jpg"
-            alt="Fifty Shades of Grey"
-            name="Fifty Shades of Grey"
-            title="Fifty Shades of Grey"
-          />
-          <img
-            src="https://m.media-amazon.com/images/I/71WozAG2FqL._AC_SY550_.jpg"
-            alt="The Good Dinosour"
-            name="The Good Dinosour"
-            title="The Good Dinosour"
-          />
-          <img
-            src="http://www.impawards.com/2015/posters/cinderella.jpg"
-            alt="Cindrella"
-            name="Cindrella"
-            title="Cindrella"
-          />
-          <img
-            src="http://www.impawards.com/2020/posters/rental.jpg"
-            alt="The Rental"
-            name="The Rental"
-            title="The Rental"
-          />
-          <img
-            src="https://m.media-amazon.com/images/M/MV5BMjM2NTQ5Mzc2M15BMl5BanBnXkFtZTgwNTcxMDI2NTE@._V1_.jpg"
-            alt="Ant man"
-            name="Ant man"
-            title="Ant man"
-          />
-        </div>
-      </div>
-    </div>
-
-    <!-- footer -->
-    <div id="footer">
-      <div id="footup">
-        <div>
-          <p id="foothead">Company</p>
-          <p class="footbody">About Us</p>
-          <p class="footbody">Carreers</p>
-        </div>
-        <div>
-          <p id="foothead">View Website in</p>
-          <p class="footbody">English</p>
-          <p class="footbody">Hindi</p>
-        </div>
-        <div>
-          <p id="foothead">Need Help</p>
-          <p class="footbody">Visit Help Center</p>
-          <p class="footbody">Share feedback</p>
-        </div>
-        <div>
-          <p id="foothead">Connect with us</p>
-          <p class="footbody">Instagram</p>
-          <p class="footbody">Linked in</p>
-        </div>
-      </div>
-      <div id="footdown">
-        <p>All Rights Reserved</p>
-      </div>
-    </div>
     <script src="trail.js" type="text/javascript"></script>
   </body>
 </html>

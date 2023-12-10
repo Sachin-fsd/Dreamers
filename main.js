@@ -45,3 +45,7 @@ function information(title) {
   localStorage.setItem("clicked", title);
   window.location.href = "info.html";
 }
+
+document.querySelector("#nav #search img").addEventListener("click",()=>{
+  window.location="search.html"
+})
