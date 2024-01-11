@@ -79,3 +79,8 @@ function update(r) {
   ).innerText = `BoxOffice : ${r.BoxOffice}`;
   
 }
+
+
+document.querySelector("#nav #search img").addEventListener("click",()=>{
+  window.location="search.html"
+})

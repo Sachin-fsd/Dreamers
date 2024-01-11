@@ -1,3 +1,7 @@
+window.onresize = (event)=>{
+  console.log(window.innerWidth);
+}
+
 let x, y, z, x2, y2, z2;
 
 let box1 = document.querySelector("#box1");

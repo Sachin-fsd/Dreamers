@@ -36,48 +36,111 @@ body {
 body::-webkit-scrollbar {
   display: none;
 }
+#nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 5%;
+  height: 100%;
+  background-color: #00000011;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
 
-#poster {
-  position: absolute;
-  top: 10%;
-  left: 5%;
 }
 
+#nav>div{
+  position: fixed;
+  width: 40px;
+  left: 0.7%;
+  top:30%;
+  height: 40px;
+}
+
+#nav img{
+  /* height: 100%; */
+  width:100%;
+  transition: transform 0.5s ease;
+}
+
+#nav img:hover{
+  transform: scale(1.1);
+}
+
+#nav #logo{
+  top:3%;
+  left: -0.2%;
+}
+#nav #logo img{
+  width: 220%;
+  height: auto;
+}
+
+#nav #settings{
+  top:40%
+}
+#nav #favourites{
+  top:50%
+}
+#nav #downloads{
+  top:60%
+}
+#nav #downloads img{
+  width: 110%;
+}
+#nav #support{
+  top:90%
+}
+#nav #support img{
+  width: 110%;
+}
+
+#content {
+  /* border: 1px solid green; */
+  width: 95%;
+  margin-left: 6%;
+  display: flex;
+  color: white;
+  flex-wrap: wrap;
+}
+
+#poster_div {
+  /* border: 1px solid red; */
+  width: 30%;
+  text-align: center;
+}
+#poster{
+  margin-top: 10%;
+}
 #poster img {
-  /* width: 300px;
-  height: 450px; */
+  width: 100%;
+  height: 150%;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.267) 0px 7px 29px 0px;
   border: 1px solid pink;
 }
 
-#title {
-  position: absolute;
-  left: 30%;
-  top: 10%;
+#info_div {
+  margin-left: 5%;
+  /* border: 1px solid yellow; */
   width: 60%;
+}
+
+#title {
   text-align: center;
   color: white;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  /* border: 1px solid red; */
 }
 
-#content {
-  display: flex;
-  width: 60%;
-  height: 70%;
-  flex-wrap: wrap;
-  gap: 5%;
-  position: absolute;
-  left: 35%;
-  top: 20%;
-  color: white;
+#info_div div {
+  margin-bottom: 1%;
 }
-
+#details{
+  /* border: 1px solid purple; */
+  margin-top: 4%;
+}
 #download {
-  /* border: 1px solid red; */
-  position: absolute;
   text-align: center;
   top: 80%;
   left: 7%;
@@ -101,4 +164,130 @@ body::-webkit-scrollbar {
 #download button:hover {
   background-color: rgb(61, 61, 248);
   transition: background-color 200ms ease-in-out;
+}
+#footer{
+  width: 100%;
+}
+
+#foothead {
+  /* Font & Text */
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: rgb(225, 230, 240);
+
+  /* Box */
+  height: 24px;
+
+  /* List */
+  list-style-type: disc;
+  list-style-position: outside;
+
+  /* Table */
+  border-collapse: separate;
+  border-spacing: 0px 0px;
+  caption-side: top;
+  empty-cells: show;
+
+  /* Miscellaneous */
+  overflow: visible;
+  /* Effects */
+  box-sizing: border-box;
+  text-overflow: clip;
+}
+
+#footup {
+  margin: auto;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  overflow: hidden;
+}
+
+.footbody {
+  /* Font & Text */
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+
+  /* Color & Background */
+  color: rgb(143, 152, 178);
+
+  /* Box */
+  height: 20px;
+  display: inline-flex;
+  z-index: auto;
+  list-style-position: outside;
+
+  /* Table */
+  border-collapse: separate;
+  caption-side: top;
+  empty-cells: show;
+
+  /* Miscellaneous */
+  cursor: pointer;
+
+  /* Effects */
+  box-sizing: border-box;
+  text-overflow: clip;
+}
+
+#footup div {
+  display: flex;
+  flex-direction: column;
+}
+
+#footdown p {
+  /* Font & Text */
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(112, 122, 148);
+
+  /* Box */
+  height: 20px;
+  display: block;
+
+  /* List */
+  list-style-image: none;
+  list-style-type: disc;
+  list-style-position: outside;
+
+  /* Table */
+  border-collapse: separate;
+  caption-side: top;
+  empty-cells: show;
+
+  /* Effects */
+  box-sizing: border-box;
+  text-overflow: clip;
+  text-align: center;
+}
+
+
+@media all and (min-width: 600px) and (max-width: 1200px) {
+  #nav #search{
+    position: fixed;
+    width: 30px;
+    left: 0.5%;
+    top:30%;
+    height: 30px;
+  }
+
+}
+
+@media all and (min-width: 0px) and (max-width: 600px) {
+
+  #nav #search{
+    position: fixed;
+    width: 20px;
+    left: 0.5%;
+    top:30%;
+    height: 20px;
+  }
+
 }
