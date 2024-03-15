@@ -5,7 +5,7 @@
 body {
   padding: 0;
   margin: 0;
-  margin: 5px;
+  margin: 5px 0 0 0 ;
   /* padding: 5px; */
   background-color: rgb(15, 16, 20);
   overflow-y: scroll;
@@ -17,6 +17,7 @@ body {
 body::-webkit-scrollbar {
   display: none;
 }
+
 
 #nav{
   position: fixed;
@@ -80,7 +81,6 @@ body::-webkit-scrollbar {
 #content{
   width: 95%;
   margin-left: 5%;
-  
 }
 
 #trail {
@@ -106,7 +106,8 @@ body::-webkit-scrollbar {
   height: 95vh;
   width: 100%;
   border-radius: 20px;
-  /* overflow: hidden; */
+  /* position: relative; */
+  overflow: hidden;
 }
 img {
   width: 100%;
@@ -136,8 +137,6 @@ img {
   left: 100%;
 }
 
-
-
 #box1, #box2, #box3, #box4, #box5{
   height: inherit;
   width: 93%;
@@ -158,14 +157,14 @@ img {
 }
 
 .trans2 {
-  translate: -101%;
+  transform: translateX(-101%) ;
 }
 
 .back{
-  translate: 110%;
+  transform: translateX(110%);
 }
 .back2{
-  translate: -210%;
+  transform: translateX(-210%);
 }
 
 #radio {
@@ -200,61 +199,17 @@ img {
   /* Font & Text */
   font-family: Inter, sans-serif;
   font-size: 20px;
-  font-style: normal;
-  font-variant: normal;
   font-weight: 600;
   letter-spacing: -0.2px;
   line-height: 28px;
   text-decoration: none solid rgb(225, 230, 240);
-  text-align: start;
-  text-indent: 0px;
-  text-transform: none;
-  vertical-align: baseline;
-  white-space: normal;
-  word-spacing: 0px;
-
-  /* Color & Background */
-  background-attachment: scroll;
-  background-color: rgba(0, 0, 0, 0);
-  background-image: none;
-  background-position: 0% 0%;
-  background-repeat: repeat;
   color: rgb(225, 230, 240);
-
-  /* Box */
   height: 28px;
   width: 149.781px;
-  margin: 0px;
   margin-top: 15px;
-  position: static;
   display: -webkit-box;
   /* List */
-  list-style-image: none;
-  list-style-type: disc;
-  list-style-position: outside;
-
-  /* Table */
-  border-collapse: separate;
-  border-spacing: 0px 0px;
-  caption-side: top;
-  empty-cells: show;
-  table-layout: auto;
-
-  /* Miscellaneous */
-  overflow: hidden;
-  cursor: pointer;
-  visibility: visible;
-
-  /* Effects */
-  transform: none;
-  transition: all 0s ease 0s;
-
   outline-offset: 3px;
-  box-sizing: border-box;
-  resize: none;
-  text-shadow: none;
-  text-overflow: clip;
-  word-wrap: break-word;
 }
 
 #big2 {

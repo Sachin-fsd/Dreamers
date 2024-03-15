@@ -12,7 +12,7 @@ function information(title) {
 async function get_movie(movie_name, p) {
   let a = await fetch(
     // `http://www.omdbapi.com/?apikey=85fb5fc6&s=${movie_name}&page=${p}`
-    `http://www.omdbapi.com/?apikey=da82bbd0&s=${movie_name}&page=${p}&limit=12`
+    `https://www.omdbapi.com/?apikey=da82bbd0&s=${movie_name}&page=${p}&limit=12`
   );
   let b = await a.json();
   // console.log(b.Search);
@@ -31,7 +31,7 @@ function search(e) {
 async function get_all_movie(movie_name) {
   let a = await fetch(
     // `http://www.omdbapi.com/?apikey=85fb5fc6&s=${movie_name}`
-    `http://www.omdbapi.com/?apikey=da82bbd0&s=${movie_name}`
+    `https://www.omdbapi.com/?apikey=da82bbd0&s=${movie_name}`
   );
   let b = await a.json();
   console.log("hello1");

@@ -1,6 +1,6 @@
-window.onresize = (event)=>{
-  console.log(window.innerWidth);
-}
+// window.onresize = (event)=>{
+//   console.log(window.innerWidth);
+// }
 
 let x, y, z, x2, y2, z2;
 
@@ -156,10 +156,5 @@ if(d=="0"){
 
   d=0;
 
-}
-
-  
-
-  
-  
+}  
 }
