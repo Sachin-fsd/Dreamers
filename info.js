@@ -40,8 +40,8 @@ just = 1;
 }
 
 async function get_movie(movie) {
-  // let a = await fetch(`http://www.omdbapi.com/?apikey=85fb5fc6&t=${movie}`);
-  let a = await fetch(`http://www.omdbapi.com/?apikey=da82bbd0&t=${movie}`);
+  // let a = await fetch(`https://www.omdbapi.com/?apikey=85fb5fc6&t=${movie}`);
+  let a = await fetch(`https://www.omdbapi.com/?apikey=da82bbd0&t=${movie}`);
   let result = await a.json();
   update(result);
 }
